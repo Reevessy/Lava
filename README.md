@@ -1,2 +1,2 @@
 # Lava
-A volcano plot tool
+ A dedicated tool for plotting Volcano Plots
