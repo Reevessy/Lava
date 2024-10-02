@@ -28,7 +28,6 @@ data_female <- data_female[!data_female$Gene.name %in% values_to_exclude, ]
 
 ################################################################################
 
-
 # Plot male
 p <- EnhancedVolcano(data_male,
                      title = 'ATF4 male (8 weeks) RNA-seq',
@@ -57,7 +56,6 @@ rm("p")
 
 
 ################################################################################
-
 
 # exit
 rm(list = ls())
