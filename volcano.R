@@ -9,7 +9,7 @@ lapply(c("EnhancedVolcano", "tidyverse", "org.Hs.eg.db"),
 
 ################################################################################
 
-
+# Read in male RNA-seq data
 data_male <- read.csv("./Differential_expression_analysis_table_male.csv")
 uniq_name <- make.names(data_male$Gene.name, unique = TRUE)
 row.names(data_male) <- uniq_name
