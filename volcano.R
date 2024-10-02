@@ -9,6 +9,7 @@ lapply(c("EnhancedVolcano", "tidyverse", "org.Hs.eg.db"),
 
 ################################################################################
 
+
 # Read in male RNA-seq data
 data_male <- read.csv("./Differential_expression_analysis_table_male.csv")
 uniq_name <- make.names(data_male$Gene.name, unique = TRUE)
@@ -27,6 +28,7 @@ data_female <- data_female[!data_female$Gene.name %in% values_to_exclude, ]
 
 
 ################################################################################
+
 
 # Plot male
 p <- EnhancedVolcano(data_male,
@@ -56,6 +58,7 @@ rm("p")
 
 
 ################################################################################
+
 
 # exit
 rm(list = ls())
